@@ -1,0 +1,70 @@
+"","date","title","users","city","label"
+"1",2016-12-15,"Show me Shiny",174,"Warsaw (21)",NA
+"2",2016-11-24,"RBioMeSs - R and Bio-informatics/Medical statistics",147,"Warsaw (21)",NA
+"3",2016-10-20,"R-Ladies - Warsztaty z R",69,"Warsaw (21)",NA
+"4",2016-06-09,"SER 19 %>% PwC <- XGBoost + SQLServer2016",126,"Warsaw (21)",NA
+"5",2016-05-19,"SER 18 <- Rcpp + przemysł papierniczy",82,"Warsaw (21)",NA
+"6",2016-04-21,"SER 17 - laRge scale",138,"Warsaw (21)",NA
+"7",2016-03-17,"SER 16 - 90 min z caret, nnet i Google Analytics",191,"Warsaw (21)",NA
+"8",2016-01-14,"SER 15 + GWP: elastic i pivotTable w R",116,"Warsaw (21)",NA
+"9",2015-12-17,"SER 14 + Modelowanie + Allegro",107,"Warsaw (21)",NA
+"10",2015-11-26,"SER + Ubezpieczenia/ SER + Insurance",137,"Warsaw (21)",NA
+"11",2016-04-21,"SER 17 - laRge scale",138,"Warsaw (21)",NA
+"12",2016-03-17,"SER 16 - 90 min z caret, nnet i Google Analytics",191,"Warsaw (21)",NA
+"13",2016-01-14,"SER 15 + GWP: elastic i pivotTable w R",116,"Warsaw (21)",NA
+"14",2015-12-17,"SER 14 + Modelowanie + Allegro",107,"Warsaw (21)",NA
+"15",2015-11-26,"SER + Ubezpieczenia/ SER + Insurance",137,"Warsaw (21)",NA
+"16",2015-10-22,"Jesienne Spotkanie Entuzjastów R",113,"Warsaw (21)",NA
+"17",2015-09-26,"Jak oni głosowali? - Analiza głosowań w Sejmie VII kadencji",52,"Warsaw (21)",NA
+"18",2015-05-21,"#10 Spotkanie Entuzjastów R + warsztaty z przetwarzania i prezentowania danych",43,"Warsaw (21)",NA
+"19",2015-05-09,"Maraton zespołowej analizy danych",19,"Warsaw (21)",NA
+"20",2015-04-23,"#9 Spotkanie Entuzjastów R",61,"Warsaw (21)",NA
+"21",2016-12-14,"Naukowe Inspiracje ""Koło (R)atunkowe - nauka pływania w morzu danych""",13,"Cracow (15)",NA
+"22",2016-12-06,"#11 Spotkanie Entuzjastów R w Krakowie",74,"Cracow (15)",NA
+"23",2016-09-30,"#10 Spotkanie Entuzjastów R w Krakowie",65,"Cracow (15)",NA
+"24",2016-05-19,"#9 Spotkanie Entuzjastów R w Krakowie",60,"Cracow (15)",NA
+"25",2016-04-14,"#8 Spotkanie Entuzjastów R w Krakowie",51,"Cracow (15)",NA
+"26",2016-03-16,"#7 Spotkanie Entuzjastów R w Krakowie",53,"Cracow (15)",NA
+"27",2016-02-18,"How to apply R to real-life business problems - meeting with McKinsey",61,"Cracow (15)",NA
+"28",2015-11-28,"Maraton analizy danych #2 eRka i Onet.pl",42,"Cracow (15)",NA
+"29",2015-10-27,"#6 Spotkanie Entuzjastów R w Krakowie",50,"Cracow (15)",NA
+"30",2015-10-03,"HackDay #1 - Poseł bez tajemnic!",7,"Cracow (15)",NA
+"31",2015-05-13,"#5 Spotkanie Entuzjastów R w Krakowie",32,"Cracow (15)",NA
+"32",2015-03-11,"#4 Spotkanie Entuzjastów R w Krakowie",55,"Cracow (15)",NA
+"33",2015-01-28,"#3 Spotkanie Entuzjastów R w Krakowie",33,"Cracow (15)",NA
+"34",2014-12-10,"#2 Spotkanie Entuzjastów R w Krakowie",36,"Cracow (15)",NA
+"35",2014-11-06,"#1 Spotkanie Entuzjastów R w Krakowie",24,"Cracow (15)",NA
+"36",2016-11-03,"PAZUR 18 — Roche & big data",77,"Poznań (8)",NA
+"37",2016-05-19,"PAZUR 17 - SQL Server & R oraz C# / Knime i R",38,"Poznań (8)",NA
+"38",2016-04-21,"PAZUR 16 - Gene expression patterns",48,"Poznań (8)",NA
+"39",2016-03-17,"PAZUR 15 - Tableau + R, PowerBI + R",77,"Poznań (8)",NA
+"40",2016-02-19,"PAZUR 14 - Spark, big data, R Open at Microsoft",52,"Poznań (8)",NA
+"41",2016-01-14,"Kolejne spotkanie użytkowników R - PAZUR 13",38,"Poznań (8)",NA
+"42",2016-12-01,"Spotkanie nr 16 / Meetup #16",39,"Wrocław (16)",NA
+"43",2016-11-10,"Spotkanie nr 15 / Meetup #15",67,"Wrocław (16)",NA
+"44",2016-10-06,"Spotkanie nr 14 / Meetup #14",64,"Wrocław (16)",NA
+"45",2016-06-02,"Spotkanie nr 13 / Meetup #13",80,"Wrocław (16)",NA
+"46",2016-05-12,"Spotkanie nr 12 / Meetup #12",57,"Wrocław (16)",NA
+"47",2016-04-11,"Spotkanie nr 11 / Meetup #11",132,"Wrocław (16)",NA
+"48",2016-03-03,"Spotkanie nr 10 / Meetup #10",73,"Wrocław (16)",NA
+"49",2016-02-04,"Spotkanie nr 9 / Meetup #9",57,"Wrocław (16)",NA
+"50",2015-12-15,"Spotkanie nr 8",48,"Wrocław (16)",NA
+"51",2015-11-18,"Spotkanie nr 7",76,"Wrocław (16)",NA
+"52",2015-10-08,"Spotkanie nr 6",44,"Wrocław (16)",NA
+"53",2015-08-06,"Spotkanie nr 5 (wakacyjne)",39,"Wrocław (16)",NA
+"54",2015-07-02,"Spotkanie nr 4 (wakacyjne)",41,"Wrocław (16)",NA
+"55",2015-06-11,"Spotkanie nr 3",55,"Wrocław (16)",NA
+"56",2015-05-07,"Pierwsze comiesięczne spotkanie",63,"Wrocław (16)",NA
+"57",2015-04-02,"Poznajmy się i porozmawiajmy [!zmiana miejsca!]",49,"Wrocław (16)",NA
+"58",2016-12-12,"DSŁ 7",59,"Lódź (7)",NA
+"59",2016-06-07,"DSŁ 6",28,"Lódź (7)",NA
+"60",2016-05-05,"DSŁ 5",48,"Lódź (7)",NA
+"61",2016-04-05,"DSŁ 4",42,"Lódź (7)",NA
+"62",2016-03-01,"DSŁ 3",30,"Lódź (7)",NA
+"63",2015-12-15,"DSŁ 2",27,"Lódź (7)",NA
+"64",2015-11-04,"DSŁ 1 - spotkanie organizacyjne",26,"Lódź (7)",NA
+"65",2016-10-13,"European R Users Meeting",286,"Poznań (8)","eRum 2016"
+"66",2014-10-15,"Polski Akademicki Zlot Użytkowników R",100,"Poznań (8)","PAZUR 2014"
+"67",2017-09-28,"Why R?",200,"Warsaw (21)","Why R? 2017"
+"68",2017-01-12,"meet(R) in Tricity!",14,"Trójmiasto (1)","upcoming"
+"69",2016-11-30,"Rzeszów 1",30,"Rzeszów (1)","no meetup"

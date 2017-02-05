@@ -89,7 +89,8 @@ ggplot(whyR, aes(x = date, y = users, col = city)) +
        caption = "code: github.com/whyR-conference/meetup-harvesting") +
   ylab("Attendees") +
   theme_hc(bgcolor = "darkunica") + scale_fill_hc() +
-  theme(legend.position = "top", legend.title = element_blank(), legend.box = "horizontal") +
+  theme(legend.position = "top", legend.title = element_blank(), legend.box = "horizontal",
+        axis.text = element_text(color = "gray")) +
   scale_x_date(date_labels = "%Y", date_breaks = "1 year") + 
   guides(colour = guide_legend(nrow = 1)) +
   #geom_text_repel(aes(label = label))
