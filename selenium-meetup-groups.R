@@ -5,48 +5,93 @@ library(stringi)
 remDr <- remoteDriver(port = 4445L)
 remDr$open(silent = TRUE)
 
-whyR_meetup <- function(group_url = "https://www.meetup.com/Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup/events/past",
-                        n_unroll = 3){
+# NOW LOG IN MANUALLY IN VIAGRA
+
+# I do not assign remDr$findElements as I had troubles with http://www.seleniumhq.org/exceptions/stale_element_reference.jsp
+
+whyR_meetup <- function(group_url = "https://www.meetup.com/Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup"){
   
-  remDr$navigate(group_url)
-  for(i in 1:n_unroll){
-    remDr$findElements("class name", "page-meetups")[[3]]$clickElement()
-    Sys.sleep(1)
+  past <- file.path(group_url, 'events', 'past')
+  remDr$navigate(past)
+  
+  what_can_be_clicked <-
+    unlist(
+      lapply(remDr$findElements("class name", "page-meetups"), function(driverElement){
+        driverElement$getElementText()
+      })
+    )
+  
+  cat("Listing past events...", "\n")
+  while("More Meetups" %in% what_can_be_clicked) {
+    remDr$findElements("class name", "page-meetups")[[which("More Meetups" == what_can_be_clicked)]]$clickElement()
+    Sys.sleep(3)
+    what_can_be_clicked <-
+    unlist(
+      lapply(remDr$findElements("class name", "page-meetups"), function(driverElement){
+        driverElement$getElementText()
+      }))
+    
+    Sys.sleep(3)
   }
-  
-  events <- remDr$findElements("class name", "past")
-  
+  cat("Finished listing. Starting data collection...", "\n")
+  cat(length(remDr$findElements("class name", "past")), " past events ...", "\n")
+  #events <- remDr$findElements("class name", "past")
   meetup_info <- list()
-  for(event in seq_along(events)){
-    date <- events[[event]]$findChildElement("class name", "row-item")$getElementText()[[1]]
+  for(event in seq_along(remDr$findElements("class name", "past"))){
+    date <- remDr$findElements("class name", "past")[[event]]$findChildElement("class name", "row-item")$getElementText()[[1]]
     date <- strsplit(date, split = " · ")[[1]][1]
     
-    title <- events[[event]]$findChildElement("class name", "event-title")$getElementText()[[1]]
+    title <- remDr$findElements("class name", "past")[[event]]$findChildElement("class name", "event-title")$getElementText()[[1]]
     
-    users <- events[[event]]$findChildElement("class name", "event-rating")$getElementText()[[1]]
+    users <- remDr$findElements("class name", "past")[[event]]$findChildElement("class name", "event-rating")$getElementText()[[1]]
     users <- stri_extract_all_regex(
       strsplit(users,
                split = "|", fixed = TRUE)[[1]][1],
       "[0-9]+")[[1]]
-    
+    cat(title, users, date, "\n")
     meetup_info[[event]] <- data.frame(date = date, title = title, 
                                        users = as.numeric(as.character(users)),
                                        stringsAsFactors = FALSE)
   }
+  
+  # # upcoming
+  # cat("Going to upcoming events...", "\n")
+  # cat(length(remDr$findElements("class name", "event-list")), " upcoming events ...", "\n")
+  # remDr$navigate(file.path(group_url, "#upcoming"))
+  # Sys.sleep(3)
+  # for(event in seq_along(remDr$findElements("class name", "event-list"))) {
+  #   date <- remDr$findElements("class name", "event-list")[[event]]$findChildElement("class name", "date")$getElementText()[[1]]
+  #   date <- strsplit(date, split = " · ")[[1]][1]
+  #   
+  #   title <- remDr$findElements("class name", "event-list")[[event]]$findChildElement("class name", "hoverLink")$getElementText()[[1]]
+  #   
+  #   users <- remDr$findElements("class name", "event-list")[[event]]$findChildElement("class name", "unlink")$getElementText()[[1]]
+  #   users <- stri_extract_all_regex(
+  #     strsplit(users,
+  #              split = "|", fixed = TRUE)[[1]][1],
+  #     "[0-9]+")[[1]]
+  #   cat(title, users, date, "\n")
+  #   meetup_info[[length(meetup_info)+1]] <- data.frame(date = date, title = title, 
+  #                                      users = as.numeric(as.character(users)),
+  #                                      stringsAsFactors = FALSE)
+  # }
+  
   do.call(rbind,meetup_info)
 }
 
 Warsaw <- whyR_meetup()
-Cracow <- whyR_meetup("https://www.meetup.com/Cracow-R-User-Group/events/past", 2)
-Poznan <- whyR_meetup("https://www.meetup.com/Poznan-R-User-Group-PAZUR/events/past", 1)
-Wroclaw <- whyR_meetup("https://www.meetup.com/Data-Science-Wroclaw/events/past", 3)
-Lodz <- whyR_meetup("https://www.meetup.com/Data-Science-%C5%81od%C5%BA/events/past", 1)
+Cracow <- whyR_meetup("https://www.meetup.com/Cracow-R-User-Group")
+Poznan <- whyR_meetup("https://www.meetup.com/Poznan-R-User-Group-PAZUR")
+Wroclaw <- whyR_meetup("https://www.meetup.com/Wroclaw-R-Users-Group")
+Trojmiasto <- whyR_meetup("https://www.meetup.com/Trojmiejska-Grupa-Entuzjastow-R/")
+
+Poznan[1,1] <- "Feb 2, 2017"
 
 rbind(cbind(Warsaw, city = "Warsaw", label = NA),
       cbind(Cracow, city = "Cracow", label = NA),
       cbind(Poznan, city = "Poznań", label = NA),
       cbind(Wroclaw, city = "Wrocław", label = NA),
-      cbind(Lodz, city = "Lódź", label = NA),
+      cbind(Trojmiasto, city = "Tri-City", label = NA),
       data.frame(date = "Oct 13, 2016",
                  title = "European R Users Meeting",
                  users = 286, city = "Poznań", label = "eRum 2016"),
@@ -56,9 +101,6 @@ rbind(cbind(Warsaw, city = "Warsaw", label = NA),
       data.frame(date = "Sep 28, 2017",
                  title = "Why R?",
                  users = 200, city = "Warsaw", label = "Why R? 2017"),
-      data.frame(date = "Jan 12, 2017",
-                 title = "meet(R) in Tricity!",
-                 users = 14, city = "Trójmiasto", label = "upcoming"),
       data.frame(date = "Nov 30, 2016",
                  title = "Rzeszów 1",
                  users = 30, city = "Rzeszów", label = "no meetup")) -> whyR
@@ -78,16 +120,14 @@ levels(whyR$city) <- paste(levels(whyR$city), " (",table(whyR$city), ")", sep = 
 
 library(ggplot2)
 library(ggthemes)
-
-png("title.png", width = 784, height = 250)
-ggplot(whyR, aes(x = date, y = users, col = city)) + 
+p <- ggplot(whyR, aes(x = date, y = users, col = city)) + 
   #geom_bar(stat="identity", position="dodge") +
   geom_point() +
-  xlab("") +
+  xlab(paste0("State for ", Sys.Date())) +
   labs(title = "R Users Meetings in Poland",
        subtitle = "Since last polish R confernce in 2014 till the next one in Warsaw, September 2017",
        caption = "code: github.com/whyR-conference/meetup-harvesting") +
-  ylab("Attendees") +
+  ylab("Registered Attendees") +
   theme_hc(bgcolor = "darkunica") + scale_fill_hc() +
   theme(legend.position = "top", legend.title = element_blank(), legend.box = "horizontal",
         axis.text = element_text(color = "gray")) +
@@ -104,7 +144,16 @@ ggplot(whyR, aes(x = date, y = users, col = city)) +
                                                     "Next polish R conference")) +
   annotate("text", x = c(as.Date("2017-09-20")), colour = "#FFFFFF", size = 6,
                           y = c(150), label = c("whyr.pl")) 
+
+png("whyr.png", width = 784, height = 250)
+plot(p)
+dev.off()
+
+pdf("whyr.pdf", 14, 4)
+plot(p)
 dev.off()
   
 
 Sys.setlocale("LC_TIME", lct)
+
+write.csv(whyR, file = "whyR.csv", quote = FALSE, row.names = FALSE)
