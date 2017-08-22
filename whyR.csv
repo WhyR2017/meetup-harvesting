@@ -1,51 +1,83 @@
 date,title,users,city,label
-2017-01-19,Tidyverse - przegląd nowinek,99,Warsaw (22),NA
-2016-12-15,Show me Shiny,174,Warsaw (22),NA
-2016-11-24,RBioMeSs - R and Bio-informatics/Medical statistics,147,Warsaw (22),NA
-2016-10-20,R-Ladies - Warsztaty z R,69,Warsaw (22),NA
-2016-06-09,SER 19 %>% PwC <- XGBoost + SQLServer2016,126,Warsaw (22),NA
-2016-05-19,SER 18 <- Rcpp + przemysł papierniczy,82,Warsaw (22),NA
-2016-04-21,SER 17 - laRge scale,138,Warsaw (22),NA
-2016-03-17,SER 16 - 90 min z caret, nnet i Google Analytics,191,Warsaw (22),NA
-2016-01-14,SER 15 + GWP: elastic i pivotTable w R,116,Warsaw (22),NA
-2015-12-17,SER 14 + Modelowanie + Allegro,107,Warsaw (22),NA
-2015-11-26,SER + Ubezpieczenia/ SER + Insurance,137,Warsaw (22),NA
-2015-10-22,Jesienne Spotkanie Entuzjastów R,113,Warsaw (22),NA
-2015-09-26,Jak oni głosowali? - Analiza głosowań w Sejmie VII kadencji,52,Warsaw (22),NA
-2015-05-21,#10 Spotkanie Entuzjastów R + warsztaty z przetwarzania i prezentowania danych,43,Warsaw (22),NA
-2015-05-09,Maraton zespołowej analizy danych,19,Warsaw (22),NA
-2015-04-23,#9 Spotkanie Entuzjastów R,61,Warsaw (22),NA
-2015-03-19,#8 Spotkanie Entuzjastów R,41,Warsaw (22),NA
-2015-02-19,SER + ML @Cinema,30,Warsaw (22),NA
-2014-12-08,#7 Spotkanie Entuzjastów R,35,Warsaw (22),NA
-2014-11-27,#6 Warszawskie Spotkanie Entuzjastów R,43,Warsaw (22),NA
-2014-10-23,#5 Warszawskie Spotkanie Entuzjastów R,34,Warsaw (22),NA
-2017-01-24,#12 Spotkanie Entuzjastów R w Krakowie,51,Cracow (16),NA
-2016-12-14,Naukowe Inspiracje "Koło (R)atunkowe - nauka pływania w morzu danych",13,Cracow (16),NA
-2016-12-06,#11 Spotkanie Entuzjastów R w Krakowie,74,Cracow (16),NA
-2016-09-30,#10 Spotkanie Entuzjastów R w Krakowie,65,Cracow (16),NA
-2016-05-19,#9 Spotkanie Entuzjastów R w Krakowie,60,Cracow (16),NA
-2016-04-14,#8 Spotkanie Entuzjastów R w Krakowie,51,Cracow (16),NA
-2016-03-16,#7 Spotkanie Entuzjastów R w Krakowie,53,Cracow (16),NA
-2016-02-18,How to apply R to real-life business problems - meeting with McKinsey,61,Cracow (16),NA
-2015-11-28,Maraton analizy danych #2 eRka i Onet.pl,42,Cracow (16),NA
-2015-10-27,#6 Spotkanie Entuzjastów R w Krakowie,50,Cracow (16),NA
-2015-10-03,HackDay #1 - Poseł bez tajemnic!,7,Cracow (16),NA
-2015-05-13,#5 Spotkanie Entuzjastów R w Krakowie,32,Cracow (16),NA
-2015-03-11,#4 Spotkanie Entuzjastów R w Krakowie,55,Cracow (16),NA
-2015-01-28,#3 Spotkanie Entuzjastów R w Krakowie,33,Cracow (16),NA
-2014-12-10,#2 Spotkanie Entuzjastów R w Krakowie,36,Cracow (16),NA
-2014-11-06,#1 Spotkanie Entuzjastów R w Krakowie,24,Cracow (16),NA
-2017-02-02,PAZUR 19 — Pearson IOKI & shiny + drugi prelegent poszukiwany!,36,Poznań (9),NA
-2016-11-03,PAZUR 18 — Roche & big data,77,Poznań (9),NA
-2016-05-19,PAZUR 17 - SQL Server & R oraz C# / Knime i R,38,Poznań (9),NA
-2016-04-21,PAZUR 16 - Gene expression patterns,48,Poznań (9),NA
-2016-03-17,PAZUR 15 - Tableau + R, PowerBI + R,77,Poznań (9),NA
-2016-02-19,PAZUR 14 - Spark, big data, R Open at Microsoft,52,Poznań (9),NA
-2016-01-14,Kolejne spotkanie użytkowników R - PAZUR 13,38,Poznań (9),NA
-2017-01-25,Diagnoza Społeczna - eksploracja danych,18,Wrocław (1),NA
-2017-01-12,meet(R) in Tricity!,31,Tri-City (1),NA
-2016-10-13,European R Users Meeting,286,Poznań (9),eRum 2016
-2014-10-15,Polski Akademicki Zlot Użytkowników R,100,Poznań (9),PAZUR 2014
-2017-09-28,Why R?,200,Warsaw (22),Why R? 2017
-2016-11-30,Rzeszów 1,30,Rzeszów (1),no meetup
+2017-06-22,SER XVII - Mapy + Panorama + Mapy,94,Warsaw (34),NA
+2017-06-08,R-Ladies warsztaty z Markdown,27,Warsaw (34),NA
+2017-05-25,SER XXVI - Wizualizacje Modeli Statystycznych,158,Warsaw (34),NA
+2017-05-11,R-Ladies warsztaty z podstaw R,30,Warsaw (34),NA
+2017-04-20,enteRprise - Microsoft,179,Warsaw (34),NA
+2017-03-16,R-Ladies warsztaty z R i dplyr,46,Warsaw (34),NA
+2017-03-09,3xR: tRzecie uRodziny SERa - podsumowanie + sesje round-tables,107,Warsaw (34),NA
+2017-01-19,Tidyverse - przegląd nowinek,99,Warsaw (34),NA
+2016-12-15,Show me Shiny,174,Warsaw (34),NA
+2016-11-24,RBioMeSs - R and Bio-informatics/Medical statistics,147,Warsaw (34),NA
+2016-10-20,R-Ladies - Warsztaty z R,69,Warsaw (34),NA
+2016-06-09,SER 19 %>% PwC <- XGBoost + SQLServer2016,126,Warsaw (34),NA
+2016-05-19,SER 18 <- Rcpp + przemysł papierniczy,82,Warsaw (34),NA
+2016-04-21,SER 17 - laRge scale,138,Warsaw (34),NA
+2016-03-17,SER 16 - 90 min z caret, nnet i Google Analytics,191,Warsaw (34),NA
+2016-10-20,R-Ladies - Warsztaty z R,69,Warsaw (34),NA
+2016-06-09,SER 19 %>% PwC <- XGBoost + SQLServer2016,126,Warsaw (34),NA
+2016-05-19,SER 18 <- Rcpp + przemysł papierniczy,82,Warsaw (34),NA
+2016-04-21,SER 17 - laRge scale,138,Warsaw (34),NA
+2016-03-17,SER 16 - 90 min z caret, nnet i Google Analytics,191,Warsaw (34),NA
+2016-01-14,SER 15 + GWP: elastic i pivotTable w R,116,Warsaw (34),NA
+2015-12-17,SER 14 + Modelowanie + Allegro,107,Warsaw (34),NA
+2015-11-26,SER + Ubezpieczenia/ SER + Insurance,137,Warsaw (34),NA
+2015-10-22,Jesienne Spotkanie Entuzjastów R,113,Warsaw (34),NA
+2015-09-26,Jak oni głosowali? - Analiza głosowań w Sejmie VII kadencji,52,Warsaw (34),NA
+2015-05-21,#10 Spotkanie Entuzjastów R + warsztaty z przetwarzania i prezentowania danych,43,Warsaw (34),NA
+2015-05-09,Maraton zespołowej analizy danych,19,Warsaw (34),NA
+2015-04-23,#9 Spotkanie Entuzjastów R,61,Warsaw (34),NA
+2015-03-19,#8 Spotkanie Entuzjastów R,41,Warsaw (34),NA
+2015-02-19,SER + ML @Cinema,30,Warsaw (34),NA
+2014-12-08,#7 Spotkanie Entuzjastów R,35,Warsaw (34),NA
+2014-11-27,#6 Warszawskie Spotkanie Entuzjastów R,43,Warsaw (34),NA
+2014-10-23,#5 Warszawskie Spotkanie Entuzjastów R,34,Warsaw (34),NA
+2017-05-08,R, duże dane i machine learning w analizie danych onkologicznych,102,Cracow (20),NA
+2017-05-08,Warsztaty "wizualizacja danych z ggplot2",22,Cracow (20),NA
+2017-04-27,#14 Spotkanie Entuzjastów R w Krakowie,56,Cracow (20),NA
+2017-03-21,#13 Spotkanie Entuzjastów R w Krakowie,52,Cracow (20),NA
+2017-01-24,#12 Spotkanie Entuzjastów R w Krakowie,51,Cracow (20),NA
+2016-12-14,Naukowe Inspiracje "Koło (R)atunkowe - nauka pływania w morzu danych",13,Cracow (20),NA
+2016-12-06,#11 Spotkanie Entuzjastów R w Krakowie,74,Cracow (20),NA
+2016-09-30,#10 Spotkanie Entuzjastów R w Krakowie,65,Cracow (20),NA
+2016-05-19,#9 Spotkanie Entuzjastów R w Krakowie,60,Cracow (20),NA
+2016-04-14,#8 Spotkanie Entuzjastów R w Krakowie,51,Cracow (20),NA
+2016-03-16,#7 Spotkanie Entuzjastów R w Krakowie,53,Cracow (20),NA
+2016-02-18,How to apply R to real-life business problems - meeting with McKinsey,61,Cracow (20),NA
+2015-11-28,Maraton analizy danych #2 eRka i Onet.pl,42,Cracow (20),NA
+2015-10-27,#6 Spotkanie Entuzjastów R w Krakowie,50,Cracow (20),NA
+2015-10-03,HackDay #1 - Poseł bez tajemnic!,7,Cracow (20),NA
+2015-05-13,#5 Spotkanie Entuzjastów R w Krakowie,32,Cracow (20),NA
+2015-03-11,#4 Spotkanie Entuzjastów R w Krakowie,55,Cracow (20),NA
+2015-01-28,#3 Spotkanie Entuzjastów R w Krakowie,33,Cracow (20),NA
+2014-12-10,#2 Spotkanie Entuzjastów R w Krakowie,36,Cracow (20),NA
+2014-11-06,#1 Spotkanie Entuzjastów R w Krakowie,24,Cracow (20),NA
+2017-02-02,PAZUR 22 — wprowadzenie do sieci neuronowych + sf + modele hierarchiczne,64,Poznań (12),NA
+2017-04-20,PAZUR 21 - h2o + deep learing + IoT,50,Poznań (12),NA
+2017-03-23,PAZUR 20 - wydanie specjalne = Przemek Biecek + organizatorzy grup R w Polsce,57,Poznań (12),NA
+2017-02-02,PAZUR 19 — Pearson IOKI & shiny + drugi prelegent poszukiwany!,36,Poznań (12),NA
+2016-11-03,PAZUR 18 — Roche & big data,77,Poznań (12),NA
+2016-05-19,PAZUR 17 - SQL Server & R oraz C# / Knime i R,38,Poznań (12),NA
+2016-04-21,PAZUR 16 - Gene expression patterns,48,Poznań (12),NA
+2016-03-17,PAZUR 15 - Tableau + R, PowerBI + R,77,Poznań (12),NA
+2016-02-19,PAZUR 14 - Spark, big data, R Open at Microsoft,52,Poznań (12),NA
+2016-01-14,Kolejne spotkanie użytkowników R - PAZUR 13,38,Poznań (12),NA
+2017-07-19,STWUR #7: Regresja grzbietowa lub jak HIV wpływa na korę mózgową,12,Wrocław (10),NA
+2017-06-21,STWUR #6: Mieszkanie moich marzeń w sieciach neuronowych,12,Wrocław (10),NA
+2017-06-07,STWUR #5: Uczenie maszynowe w R, czyli gdzie stać mnie na mieszkanie,9,Wrocław (10),NA
+2017-05-17,STWUR #4: czynniki w R, czyli samotność w sieci,4,Wrocław (10),NA
+2017-04-19,STWURek #3 - warsztaty z rysowania map w R,3,Wrocław (10),NA
+2017-03-30,I Ty możesz zostać kartografem. Mapy w R,17,Wrocław (10),NA
+2017-03-16,STWURek #2: ggplot - drugie starcie,9,Wrocław (10),NA
+2017-03-01,Pokaż mi to! Wizualizacja w R,22,Wrocław (10),NA
+2017-02-13,STWURek #1: Jak w R dane przetworzyć na informację?,15,Wrocław (10),NA
+2017-01-25,Diagnoza Społeczna - eksploracja danych,18,Wrocław (10),NA
+2017-06-24,Machine learning w R przy użyciu H2O,20,Tri-City (6),NA
+2017-05-13,meet(R) in TriCity #5 - warsztaty sparklyr,25,Tri-City (6),NA
+2017-04-20,RBioMeSs,22,Tri-City (6),NA
+2017-03-16,meet(R) in Tricity #3,23,Tri-City (6),NA
+2017-02-16,Shiny apps and more ...,29,Tri-City (6),NA
+2017-01-12,meet(R) in Tricity!,31,Tri-City (6),NA
+2016-10-13,European R Users Meeting,286,Poznań (12),eRum 2016
+2014-10-15,Polski Akademicki Zlot Użytkowników R,100,Poznań (12),PAZUR 2014
+2017-09-28,Why R?,200,Warsaw (34),Why R? 2017

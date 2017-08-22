@@ -100,10 +100,7 @@ rbind(cbind(Warsaw, city = "Warsaw", label = NA),
                  users = 100, city = "Poznań", label = "PAZUR 2014"),
       data.frame(date = "Sep 28, 2017",
                  title = "Why R?",
-                 users = 200, city = "Warsaw", label = "Why R? 2017"),
-      data.frame(date = "Nov 30, 2016",
-                 title = "Rzeszów 1",
-                 users = 30, city = "Rzeszów", label = "no meetup")) -> whyR
+                 users = 200, city = "Warsaw", label = "Why R? 2017")) -> whyR
 
 whyR$date <- ifelse(grepl(",", whyR$date), # there was a year
                     whyR$date, # only convert to character
@@ -126,7 +123,7 @@ p <- ggplot(whyR, aes(x = date, y = users, col = city)) +
   xlab(paste0("State for ", Sys.Date())) +
   labs(title = "R Users Meetings in Poland",
        subtitle = "Since last polish R confernce in 2014 till the next one in Warsaw, September 2017",
-       caption = "code: github.com/whyR-conference/meetup-harvesting") +
+       caption = "code: github.com/whyRconf/meetup-harvesting") +
   ylab("Registered Attendees") +
   theme_hc(bgcolor = "darkunica") + scale_fill_hc() +
   theme(legend.position = "top", legend.title = element_blank(), legend.box = "horizontal",
