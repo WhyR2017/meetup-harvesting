@@ -11,6 +11,4 @@
 - Gdańsk
   - [Academic Data Science](https://www.meetup.com/Academic-Data-Science/)
   - [trigeR - Trójmiejska Grupa Entuzjastów R](https://www.meetup.com/Trojmiejska-Grupa-Entuzjastow-R/events/236257032/)
-- Rzeszów
-  - [RUserGroup Rzeszów](http://www.wais.kamil.rzeszow.pl/rusergroup-rzeszow/)
   
